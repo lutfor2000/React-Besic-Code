@@ -28,3 +28,20 @@ const LoginCondition = () => {
 };
 
 export default LoginCondition;
+
+===========================tarnary operator/shor hand if else=======================================
+      const LoginCondition = () => {
+    const status = false;
+    return(
+       <div>
+          {
+            status?
+            <button> Login successful </button>
+            :
+            <button>Logout user</button>
+          }
+       </div>
+    );
+   
+};
+export default LoginCondition;
