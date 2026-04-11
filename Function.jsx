@@ -79,5 +79,16 @@ export default Function;
 };
 
 export default Function;
-    
+
+===========================================================Images Add ========================================
+import React from 'react';
+const Images = () => {
+    return (
+        <div>
+            <img style={{width: '500px'}} src="https://images.pexels.com/photos/33539411/pexels-photo-33539411.png" alt="" />
+        </div>
+    );
+};
+
+export default Images;
     
