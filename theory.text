@@ -19,3 +19,19 @@ npm run build = final version (client/server-এ দেওয়ার জন্য
 build = রান্না শেষে সুন্দরভাবে প্যাকেট করা
 or
 npx vite build
+
+---------------------------------------------End--------------------------
+
+JSX CONVENTIONS
+
+You need to return a single parent element in JSX
+
+You can implement JS directly in JSX
+
+All Tags Self-close in JSX
+
+ClassName and HTMLFor, not class and for in JSX
+
+Write all HTML Attributes in camelCase in JSX
+
+Write Inline Styles as Objects in JSX
