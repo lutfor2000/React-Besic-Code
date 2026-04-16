@@ -95,4 +95,39 @@ export default Images;
 ==========================================Time Add =============================================
 <h2>{new Date().toLocaleString()}</h2>
 <h1 className='Bokachoda'>{2+3}</h1>
-         
+
+===============================use short if else login conditions======================================
+const status = false;
+
+const LoginLogout = () => {
+    return (
+        <div>
+            {status ? <button>Logout</button> : <button>Login</button>}
+        </div>
+    );
+};
+
+export default LoginLogout;
+
+
+===============================login use switch Conditions ======================================
+
+const status = true;
+
+const LoginLogout = () => {
+  
+        switch (status) {
+
+            case true:
+                return <button>logOut</button>
+            case false:
+                return <button>Login</button>
+            default:
+                return null;
+
+        }
+};
+
+export default LoginLogout;
+
+
