@@ -26,3 +26,36 @@ const Hero = (props) => {
 
 export default Hero;
 
+==========================Object Passed Parent======================================
+function App() {
+
+  const objectName ={
+        name: "Lutfor Rhaman",
+        age: 24,
+        city: "Dhaka"
+    }
+
+  return (
+    <>
+      <Hero item={objectName}/>
+    </>
+  )
+}
+
+export default App
+
+==========================Object Passed Child======================================
+const Hero = (props) => {
+    
+    return (
+        <div>
+            <ul>
+                <li>Name: {props.item['name']}</li>
+                <li>Age: {props.item['age']}</li>
+                <li>City: {props.item['city']}</li>
+            </ul>
+        </div>
+    );
+};
+
+export default Hero;
