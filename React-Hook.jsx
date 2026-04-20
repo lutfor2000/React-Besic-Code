@@ -38,4 +38,24 @@ Hook আসার পর Function Component দিয়েই সব করা য
 DOM Element Access করা
 Input, button, div ইত্যাদি সরাসরি ধরতে
 যেমন: focus, scroll, select করা
+=============================== DOM use useRef()=====================================
+import { useRef } from "react";
+
+const Hero = () => {
+
+   const myId = useRef();
+
+   const change =()=>{
+      myId.current.innerHTML="Bangali is Boka choda";
+   }
+
+    return (
+        <div>
+           <h1 ref={myId}></h1>
+           <button onClick={change}>Click Me</button>
+        </div>
+    );
+};
+
+export default Hero;
 
