@@ -68,6 +68,8 @@ const Hero = () => {
   
     const change = ()=>{
        myImage.current.src="https://images.pexels.com/photos/5380610/pexels-photo-5380610.jpeg";
+       myImage.current.setAttribute('height','500px');
+       myImage.current.setAttribute('width','600px');
     }
 
     return (
