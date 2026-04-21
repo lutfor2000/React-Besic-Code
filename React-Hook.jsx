@@ -82,3 +82,28 @@ const Hero = () => {
 
 export default Hero;
 
+=============================== import Value Show  useRef()=====================================
+import { useRef } from "react";
+
+const Hero = () => {
+
+    let FirstName,LastName = useRef();
+   
+  
+    const change = ()=>{
+        let fName = FirstName.value;
+        let lName = LastName.value;
+
+        alert(fName+ " " +lName);
+    }
+
+    return (
+        <div>
+           <input ref={(a)=>FirstName=a} placeholder="Enter First Name" />
+           <input ref={(a)=>LastName=a} placeholder="Enter Last Name" />
+           <button onClick={change}>Click Me</button>
+        </div>
+    );
+};
+
+export default Hero;
