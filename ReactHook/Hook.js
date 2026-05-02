@@ -25,6 +25,64 @@ Hook আসার পর Function Component দিয়েই সব করা য
 
 ০৪. রিয়্যাক্টের দেওয়া বেশ কিছু বিল্ট-ইন হুক রয়েছে, যেমন useState, useEffect, useContext, এবং useRef।
 
-০৫. রিয়্যাক্ট হুকস রিয়্যাক্টে ডেভেলপমেন্ট প্রক্রিয়াকে অনেক সহজ করে দিয়েছে এবং পুনঃব্যবহারযোগ্য ও কম্পোজেবল কোড লেখা আরও সহজ করে তুলেছে।
+০৫. রিয়্যাক্ট হুকস রিয়্যাক্টে ডেভেলপমেন্ট প্রক্রিয়াকে অনেক সহজ করে দিয়েছে এবং পুনঃব্যবহারযোগ্য ও কম্পোজেবল কোড লেখা আরও সহজ করে তুলেছে। 
+
+
+
+1. useState → Data (State) Manage
+
+📌 ব্যবহার করো যখন:
+
+✅ Input field এর value handle করতে
+✅ Counter (increment / decrement)
+✅ Form data store করতে
+✅ API থেকে data নিয়ে UI-তে দেখাতে
+✅ UI change trigger করতে (re-render দরকার হলে)
+
+📌 Example:
+
+const [name, setName] = useState("");
+
+👉 মনে রাখো:
+Data change → UI update হবে 
+
+
+
+🔹 2. useEffect → Side Effect Handle
+
+📌 ব্যবহার করো যখন:
+
+✅ API call করতে (fetch / axios)
+✅ Component load হলে কিছু run করতে
+✅ State change হলে action নিতে
+✅ Timer (setInterval / setTimeout)
+✅ Event listener add/remove করতে
+
+📌 Example:
+
+useEffect(() => {
+  console.log("Component Loaded");
+}, []);
+
+👉 মনে রাখো:
+Effect run হয় render এর পরে 
+
+
+
+🔹 3. useRef → DOM + Persistent Value
+
+📌 ব্যবহার করো যখন:
+
+✅ DOM element direct access করতে (input focus, style change)
+✅ Re-render ছাড়াই value store করতে
+✅ Previous value track করতে
+✅ Timer ID বা mutable value রাখতে
+✅ Button click count track (without re-render)
+
+📌 Example:
+
+const inputRef = useRef();
+
+inputRef.current.focus();
 
 
