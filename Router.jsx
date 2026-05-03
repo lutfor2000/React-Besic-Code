@@ -1,4 +1,10 @@
+Link → Page change করে
+Route → কোন page show হবে decide করে 
 
+Link = যাওয়ার রাস্তা (Navigation)
+Route = গন্তব্য (Destination render)
+
+  
 ==> instal route cmd -> npm i react-router-dom
 
 import { BrowserRouter,Routes,Route } from "react-router-dom"
