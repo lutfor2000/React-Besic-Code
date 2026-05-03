@@ -29,3 +29,39 @@ function App() {
     </>
   )
 }
+
+
+//===============Routing Stape==============================
+
+ <BrowserRouter>
+     
+          <NavMenu/>
+
+          <Routes>
+
+               <Route path ="/images" element ={<Images/>} />
+               <Route path="/about" element = {<About/>} />
+               <Route path="/form" element = {<Form/>} />
+               <Route path="*" element={<NotFound/>}/>
+
+          </Routes>
+      </BrowserRouter>
+
+//=====================Page Link=================
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const NavMenu = () => {
+    return (
+        <div>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/images">Images</Link></li>
+                <li><Link to="/form">Form</Link></li>
+            </ul>
+        </div>
+    );
+};
+
+export default NavMenu;
