@@ -10,6 +10,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),tailwindcss()],
 })
+index.css file add -> @import "tailwindcss";
 ===============================================================================================================================
 
 => daisyUI installing -> npm i -D daisyui@latest
