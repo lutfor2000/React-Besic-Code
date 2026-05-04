@@ -11,3 +11,6 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
 })
 ===============================================================================================================================
+
+=> daisyUI installing -> npm i -D daisyui@latest
+=> index.css file add -> @plugin "daisyui";
