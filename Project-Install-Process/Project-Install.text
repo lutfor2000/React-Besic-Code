@@ -1,2 +1,13 @@
 Vite-Install - npm create vite@latest -> Project Name -> React -> Select language JavaScript -> yes 
 
+===============================================================================================================================
+Installing Tailwind Css ==> 
+-> npm install tailwindcss @tailwindcss/vite
+
+==> vite.config.js File Setup
+
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [react(),tailwindcss()],
+})
+===============================================================================================================================
