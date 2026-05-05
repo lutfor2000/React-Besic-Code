@@ -15,3 +15,8 @@ index.css file add -> @import "tailwindcss";
 
 => daisyUI installing -> npm i -D daisyui@latest
 => index.css file add -> @plugin "daisyui"; / @import "daisyui/daisyui.css";
+
+==============================================================================================================================
+
+=> Installing React Icon ->
+CMD -> npm install react-icons --save
