@@ -17,3 +17,15 @@ const Loop = () => {
 };
 
 export default Loop;
+
+====================================map==============
+
+      <div>
+           {
+             categories.map((category,i)=>(
+                <div key={i}>
+                    <p>{category.name}</p>
+                </div>
+             ))
+           }
+        </div>
