@@ -22,6 +22,11 @@ npm install -D tailwindcss postcss autoprefixer
 ✅ 2. Tailwind config generate করো
 npx tailwindcss init -p
 
+-----Or--------
+# ৩. Tailwind ইনস্টল করুন (ভারশন স্পেসিফিক করে)
+npm install --save-dev tailwindcss@3.4.0 postcss@8.4.31 autoprefixer@10.4.16
+npx tailwindcss init -p
+
 ->create two file->
 tailwind.config.js
 postcss.config.js
