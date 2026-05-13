@@ -13,6 +13,51 @@ export default defineConfig({
 index.css file add -> @import "tailwindcss";
 ===============================================================================================================================
 
+------------------------------Framework Guides-------------------------
+
+
+✅ 1. Tailwind install করো
+npm install -D tailwindcss postcss autoprefixer
+
+✅ 2. Tailwind config generate করো
+npx tailwindcss init -p
+
+->create two file->
+tailwind.config.js
+postcss.config.js
+
+---------->tailwind.config.js<--------
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#E58411',
+        "primary-light": "#E58411",
+      },
+    },
+  },
+  plugins: [],
+}
+
+index.css
+
+✅ 3. CSS file-এ Tailwind add করো
+👉 src/index.css (বা main css file) এ লিখো:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tailwind.config.js এ তোমার code বসাও (আগে যে fixed version দিয়েছি)
+
+✅ 5. Project run করো
+npm run dev
+===============================================================================================================================
+
 => daisyUI installing -> npm i -D daisyui@latest
 => index.css file add -> @plugin "daisyui"; / @import "daisyui/daisyui.css";
 
